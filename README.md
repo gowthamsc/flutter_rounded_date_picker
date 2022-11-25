@@ -15,7 +15,7 @@ Add dependencies in pubspec.yaml file. Add 2 things in it including flutter_loca
 dependencies:
   flutter_localizations:
     sdk: flutter
-  flutter_rounded_date_picker: 3.0.2
+  flutter_rounded_date_picker: 3.0.3
 ```
 
 ## Importing
@@ -24,7 +24,7 @@ import packages into your dart.
 
 ```dart
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_rounded_date_picker/rounded_picker.dart';
+import 'package:flutter_rounded_date_picker_action_design/rounded_picker.dart';
 ```
 
 ## Initialize localizations
@@ -163,11 +163,7 @@ DateTime newDateTime = await showRoundedDatePicker(
                           marginTopArrowPrevious: 16,
                           marginTopArrowNext: 16,
                           marginRightArrowNext: 32,
-                          textStyleButtonAction: TextStyle(fontSize: 28, color: Colors.white),
-                          textStyleButtonPositive:
-                              TextStyle(fontSize: 28, color: Colors.white, fontWeight: FontWeight.bold),
-                          textStyleButtonNegative: TextStyle(fontSize: 28, color: Colors.white.withOpacity(0.5)),
-                          decorationDateSelected: BoxDecoration(color: Colors.orange[600], shape: BoxShape.circle),
+                            decorationDateSelected: BoxDecoration(color: Colors.orange[600], shape: BoxShape.circle),
                           backgroundPicker: Colors.deepPurple[400],
                           backgroundActionBar: Colors.deepPurple[300],
                           backgroundHeaderMonth: Colors.deepPurple[300],
